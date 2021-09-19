@@ -36,8 +36,6 @@ public class MyTreeMap<K, V> implements Map<K, V> {
 		/**
 		 * @param key
 		 * @param value
-		 * @param left
-		 * @param right
 		 */
 		public Node(K key, V value) {
 			this.key = key;

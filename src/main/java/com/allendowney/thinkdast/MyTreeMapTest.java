@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 /**
@@ -26,10 +26,10 @@ public class MyTreeMapTest {
 	private MyTreeMap<String, Integer> map;
 
 	/**
-	 * @throws java.lang.Exception
+	 *
 	 */
 	@BeforeEach
-	public void setUp() throws Exception {
+	public void setUp() {
 		map = new MyTreeMap<String, Integer>();
 		MyTreeMap<String, Integer>.Node node08 = map.makeNode("08", 8);
 		

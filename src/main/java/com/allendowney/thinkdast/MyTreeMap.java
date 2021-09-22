@@ -33,10 +33,6 @@ public class MyTreeMap<K, V> implements Map<K, V> {
 		public Node left = null;
 		public Node right = null;
 
-		/**
-		 * @param key
-		 * @param value
-		 */
 		public Node(K key, V value) {
 			this.key = key;
 			this.value = value;
@@ -60,12 +56,10 @@ public class MyTreeMap<K, V> implements Map<K, V> {
 	 * @param target
 	 */
 	private Node findNode(Object target) {
-		// some implementations can handle null as a key, but not this one
 		if (target == null) {
 			throw new IllegalArgumentException();
 		}
 
-		// something to make the compiler happy
 		@SuppressWarnings("unchecked")
 		Comparable<? super K> k = (Comparable<? super K>) target;
 
